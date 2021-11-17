@@ -10,5 +10,5 @@ print("[*] server listening on %s : %d" %(bind_ip,bind_port))
 
 while True:
     data,addr=server.recvfrom(4096)
-    server.sendto("o yes abhi",addr)
-    print("connection established")
+    print(data)
+    server.sendto("aaaaaa",addr)
